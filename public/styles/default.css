@@ -1,0 +1,136 @@
+:root{
+    --bg-header: #0f684b;
+    --bg-default: #3b8952;
+    --fg-header: #ffffff;
+    --fg-emphasis: #03484c;
+    --font-default: "Trebuchet MS";
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.display-error{
+    color: var(--fg-header);
+    font-weight: 100;
+    padding: 30px;
+    text-align: center;
+}
+
+.display-error > a{
+    text-decoration: none;
+    color: var(--fg-emphasis);
+}
+
+body{
+    background: var(--bg-default);
+    font-family: var(--font-default);
+}
+
+.header{
+    display: flex;
+    background: var(--bg-header);
+    color: var(--fg-header);
+    align-items: center;
+    padding: 30px;
+}
+
+.header > .brand{
+    font-size: 1.5rem;
+}
+
+.header > .menu{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.header > .menu > .link{
+    text-decoration: none;
+    color: var(--fg-header);
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.body-container{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-container > form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.body-container > form > .title{
+    font-size: 1.5rem;
+    color: var(--bg-default);
+    margin: 15px 0px;
+}
+.hello-msg{
+    color: white;
+    margin-right: 10px;
+}
+
+.body-container > form > .error{
+    color: red;
+    margin: 5px 0px;
+}
+
+.flash-message{
+    background: goldenrod;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.body-container > form > input{
+    margin: 10px 0px;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--bg-default);
+    background: transparent;
+    text-align: center;
+    color: var(--bg-default);
+    transition: outline 1s;
+}
+
+.body-container > form > input:hover{
+    outline: 3px solid var(--bg-default);
+}
+
+.body-container > form > button{
+    background: var(--bg-default);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.body-container > form > input::placeholder{
+    color: var(--bg-default);
+}
+
+.body-container > form > .information{
+    color: var(--bg-default);
+    margin: 10px 0px;
+}
+
+.body-container > form > .information > a{
+    color: var(--fg-emphasis);
+    text-decoration: none;
+}
